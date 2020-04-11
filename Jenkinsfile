@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Clone repo') {
             steps {
-				bat "IF EXIST jenkinsTest RMDIR /S /Q jenkinsTest"
-                bat "git clone https://github.com/dodandeniya/jenkinsTest.git"
+				bat "IF NOT EXIST MVVMLightDemo.sln git clone https://github.com/dodandeniya/jenkinsTest.git"
+                bat "git pull https://github.com/dodandeniya/jenkinsTest.git"
             }
         }
         stage('Build') {
