@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Clone repo') {
             steps {
+				bat "rmdir jenkinsTest"
                 bat "git clone https://github.com/dodandeniya/jenkinsTest.git"
             }
         }
