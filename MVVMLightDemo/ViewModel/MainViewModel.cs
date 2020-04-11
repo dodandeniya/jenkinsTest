@@ -24,7 +24,7 @@ namespace MVVMLightDemo.ViewModel
         private void OnTextChangeButtonClickedHandler()
         {
             TextVal = "Hello MVVM light.";
-            i
+            int i
         }
     }
 }
