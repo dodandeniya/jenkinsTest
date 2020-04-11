@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat "msbuild -restore"
-				bat "msbuild /m"
+                bat "nuget -restore"
+				bat "msbuild -m"
             }
         }
     }
